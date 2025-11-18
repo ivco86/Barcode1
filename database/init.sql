@@ -200,16 +200,7 @@ VALUES (
     'active'
 );
 
--- Insert demo user (password: admin123)
--- Password hash for 'admin123' using bcrypt
-INSERT INTO users (tenant_id, username, email, password_hash, role)
-VALUES (
-    '00000000-0000-0000-0000-000000000001',
-    'admin',
-    'admin@demo.local',
-    '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5o45aXZPJl3aG',
-    'owner'
-);
+-- Admin user will be created by seed_data.py script with proper bcrypt hash
 
 -- Insert sample products
 INSERT INTO products (tenant_id, barcode, name, price, cost, stock, category) VALUES
