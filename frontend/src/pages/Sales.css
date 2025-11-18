@@ -1,0 +1,144 @@
+.sales h1 {
+  margin-bottom: 2rem;
+  color: var(--gray-dark);
+}
+
+.sales-table {
+  width: 100%;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.sales-table th {
+  background: var(--gray-light);
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--gray-dark);
+}
+
+.sales-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-badge.completed {
+  background: #d1fae5;
+  color: var(--success);
+}
+
+.status-badge.pending {
+  background: #fef3c7;
+  color: var(--warning);
+}
+
+.btn-view {
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-view:hover {
+  background: var(--primary-dark);
+}
+
+.sale-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.sale-detail-header h2 {
+  margin: 0;
+  color: var(--gray-dark);
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--gray);
+  line-height: 1;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.btn-close:hover {
+  color: var(--gray-dark);
+}
+
+.sale-detail-info {
+  background: var(--gray-light);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.sale-detail-info div {
+  font-size: 0.9rem;
+}
+
+.sale-detail-info strong {
+  display: block;
+  color: var(--gray);
+  margin-bottom: 0.25rem;
+}
+
+.items-table {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+}
+
+.items-table th {
+  background: var(--gray-light);
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.items-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.sale-detail-totals {
+  border-top: 2px solid var(--gray-light);
+  padding-top: 1rem;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  color: var(--gray-dark);
+}
+
+.total-row.final {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+  border-top: 2px solid var(--gray-light);
+  padding-top: 1rem;
+  margin-top: 0.5rem;
+}

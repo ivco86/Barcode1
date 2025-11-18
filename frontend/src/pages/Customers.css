@@ -1,0 +1,26 @@
+.customers h1 {
+  margin-bottom: 2rem;
+  color: var(--gray-dark);
+}
+
+.customers-table {
+  width: 100%;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.customers-table th {
+  background: var(--gray-light);
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--gray-dark);
+}
+
+.customers-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--gray-light);
+}

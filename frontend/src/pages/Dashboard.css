@@ -1,0 +1,108 @@
+.dashboard h1 {
+  margin-bottom: 2rem;
+  color: var(--gray-dark);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.stat-card.warning {
+  border-left: 4px solid var(--warning);
+}
+
+.stat-card h3 {
+  color: var(--gray);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0.5rem 0;
+}
+
+.stat-label {
+  color: var(--gray);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.revenue-chart {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.revenue-chart h2 {
+  margin-bottom: 2rem;
+  color: var(--gray-dark);
+  font-size: 1.2rem;
+}
+
+.chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 250px;
+  gap: 1rem;
+}
+
+.chart-bar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bar {
+  width: 100%;
+  background: var(--primary);
+  border-radius: 0.25rem 0.25rem 0 0;
+  min-height: 20px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.bar:hover {
+  background: var(--primary-dark);
+}
+
+.bar-value {
+  font-size: 0.75rem;
+  color: white;
+  font-weight: 600;
+  padding: 0.25rem;
+}
+
+.bar-label {
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  font-size: 1.2rem;
+  color: var(--gray);
+}
